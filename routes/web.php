@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 //website routes
 
+Route::get('/home', function () {
+    return view('website.home');
+})->middleware(['auth']);
+
 Route::get('/', function () {
     return view('website.home');
 })->middleware(['auth'])->name('site.home');
