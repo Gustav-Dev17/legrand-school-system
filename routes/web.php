@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+//website routes
+
 Route::get('/', function () {
     return view('website.home');
 })->middleware(['auth'])->name('site.home');
@@ -18,7 +20,7 @@ Route::get('exclui', 'App\Http\Controllers\AlunoController@exclui')->middleware(
 
 Route::get('cadastro/remove/{id}', 'App\Http\Controllers\AlunoController@remove')->middleware(['auth']);
 
-//addictional routes
+//additional routes
 
 Route::get('/locations', function () {
     return view('website.locations');
