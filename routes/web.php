@@ -24,6 +24,8 @@ Route::get('exclui', 'App\Http\Controllers\AlunoController@exclui')->middleware(
 
 Route::get('cadastro/remove/{id}', 'App\Http\Controllers\AlunoController@remove')->middleware(['auth']);
 
+Route::get('cadastro/removeall', 'App\Http\Controllers\AlunoController@removeall')->middleware(['auth']);
+
 //additional routes
 
 Route::get('/locations', function () {

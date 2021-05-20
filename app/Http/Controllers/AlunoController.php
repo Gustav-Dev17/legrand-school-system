@@ -50,14 +50,21 @@ class AlunoController extends Controller
         return view('website.excluir')->with('alunos', $alunos);
     }
 
-     public function remove($id){
-         $aluno = Aluno::find($id);
-         $aluno->delete();
-         return redirect()
-             ->action('App\Http\Controllers\AlunoController@exclui');
-     }
+    public function remove($id){
+        $aluno = Aluno::find($id);
+        $aluno->delete();
+        return redirect()
+            ->action('App\Http\Controllers\AlunoController@exclui');
+    }
 
-     public function home(){
+    public function removeall(){
+        $aluno = Aluno::all();
+        Aluno::query()->truncate();
+        return redirect()
+            ->action('App\Http\Controllers\AlunoController@lista');
+    }
+
+    public function home(){
         return view('website.home');
     }
 

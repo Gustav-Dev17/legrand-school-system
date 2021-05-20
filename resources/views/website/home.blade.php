@@ -7,7 +7,7 @@
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">Bem-vindo!</h1>
                 <p class="lead text-muted">Este é o sistema de listagem e cadastros de alunos da WindSchool. Fique à vontade
-                    para navegar e usufruir do sistema melhorando sua produtividade.</p>
+                    para navegar e usufruir do sistema, melhorando sua produtividade.</p>
             </div>
         </div>
     </section>
@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <h4>Listagem</h4>
                             <p class="card-text">Liste os alunos registrados no sistema e suas informações relevantes ao
-                                meio escolar e/ou acadêmico. Consulte também informações pessoas dos alunos.</p>
+                                meio escolar e/ou acadêmico. Consulte também informações pessoais dos alunos.</p>
                         </div>
                     </div>
                 </a>
@@ -51,8 +51,8 @@
                         <div class="card-body">
                             <h4>Cadastro</h4>
                             <p class="card-text">Cadastre, recadastre ou registre os futuros estudantes no sistema da
-                                WindSchool de acordo com suas séries e turmas. Todos os estudantes cadastrados já estarão
-                                inclusos na listagem.</p>
+                                WindSchool de acordo com suas séries e turmas. Todos os estudantes cadastrados serão
+                                incluídos na listagem.</p>
                         </div>
                     </div>
                 </a>
