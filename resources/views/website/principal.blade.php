@@ -34,6 +34,12 @@
             -moz-user-select: none;
             user-select: none;
         }
+        /* .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        } */
+
         a {
             color: inherit;
             text-decoration: none;
