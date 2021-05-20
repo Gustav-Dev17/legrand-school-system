@@ -27,7 +27,7 @@ class AlunoTableSeeder extends Seeder {
         DB::insert('insert into alunos
             (nome, idade, matricula, nivel_de_ensino, serie , turma, estado)
             values(?,?,?,?,?,?,?)',
-            array('Ana Paula Pereira', 14, '1200340', 'Ensino Fundamental', '9º Ano', 'C', 'Roraima'));
+            array('Ana Paula Pereira', 14, '1200340', 'Ensino Fundamental I', '9º Ano', 'C', 'Amazonas'));
 
         DB::insert('insert into alunos
             (nome, idade, matricula, nivel_de_ensino, serie , turma, estado)
@@ -37,7 +37,12 @@ class AlunoTableSeeder extends Seeder {
         DB::insert('insert into alunos
             (nome, idade, matricula, nivel_de_ensino, serie , turma, estado)
             values(?,?,?,?,?,?,?)',
-            array('Luana Freitas', 16, '1680001', 'Ensino Médio', '2º Ano', '5', 'Mato Grosso do Sul'));
+            array('Luana Freitas', 16, '1680001', 'Ensino Médio', '2º Ano', 'A', 'Mato Grosso'));
+
+        DB::insert('insert into alunos
+        (nome, idade, matricula, nivel_de_ensino, serie , turma, estado)
+        values(?,?,?,?,?,?,?)',
+        array('Marcos André de Sousa', 18, '1650001', 'Ensino Médio', '3º Ano', 'A', 'Rio Grande do Norte'));
     }
 }
 

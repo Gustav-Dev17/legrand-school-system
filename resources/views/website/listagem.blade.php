@@ -44,6 +44,7 @@
         <div class="col-12">
             <a href="{{route('site.cadastro')}}" class="btn btn-primary" role="button" data-bs-toggle="button">Cadastrar um aluno</a>
             <a href="{{route('site.exclui')}}" class="btn btn-danger" role="button" data-bs-toggle="button">Excluir</a>
+            <a href="{{route('site.home')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
     @endif
 @endsection

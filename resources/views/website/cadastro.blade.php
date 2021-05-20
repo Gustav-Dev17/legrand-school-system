@@ -12,7 +12,7 @@
     </div>
 @endif
 
-    <form action="{{route('site.adiciona')}}" class="row g-3 needs-validation" method="post" novalidate>
+    <form action="{{route('site.adiciona')}}" class="row g-3 needs-validation" method="post" >
 
     <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
 
