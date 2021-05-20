@@ -42,7 +42,7 @@ class AlunoTableSeeder extends Seeder {
         DB::insert('insert into alunos
         (nome, idade, matricula, nivel_de_ensino, serie , turma, estado)
         values(?,?,?,?,?,?,?)',
-        array('Marcos André de Sousa', 18, '1650001', 'Ensino Médio', '3º Ano', 'A', 'Rio Grande do Norte'));
+        array('Marcos André de Sousa', 18, '1650001', 'Ensino Médio', '3º Ano', 'E', 'Rio Grande do Norte'));
     }
 }
 
