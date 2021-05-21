@@ -35,7 +35,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 5. Run <code>php artisan migrate</code> to run migrations
 
-6. Run <code>php artisan db:seed</code> to run seeders, if any
+6. Run <code>php artisan db:seed</code> to run seeders
 
 7. Run <code>php artisan serve</code> to open the app on localhost
 
