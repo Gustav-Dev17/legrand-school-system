@@ -25,7 +25,8 @@
                     <th scope="col">Nível</th>
                     <th scope="col">Série</th>
                     <th scope="col">Turma</th>
-                    <th scope="col">Estado da Unidade</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Cidade</th>
                     <th></th>
                 </tr>
             </thead>
@@ -39,6 +40,7 @@
                     <td> {{ $a->serie }} </td>
                     <td> {{ $a->turma }}</td>
                     <td> {{ $a->estado }}</td>
+                    <td> {{ $a->cidade }}</td>
                     <td>
                         <a href="{{ action('App\Http\Controllers\AlunoController@remove', $a->id) }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#DC3545"
