@@ -244,7 +244,8 @@
                 
         });
     </script>
-
+    
+<!-- Script que desativa campo se o anterior não tiver sido selecionado-->
     <script>
         $('#school_level').change(function(e){
         $('#grade').prop('disabled', !$(this).val());
@@ -254,6 +255,7 @@
         });
     </script>
 
+<!-- Script que esconde as opções que nõo são compartíveis com a seleção do campo anterior-->
     <script>
         $('#school_level').change(function () {
             var parent = $(this).val();
@@ -264,7 +266,8 @@
             });
         });
     </script>
-
+    
+<!-- Script que desativa campo se o anterior não tiver sido selecionado-->
     <script>
         $('#grade').change(function(e){
         $('#school_class').prop('disabled', !$(this).val());
@@ -274,6 +277,7 @@
         });
     </script>
 
+<!-- Script que desativa campo se o anterior não tiver sido selecionado-->
     <script>
         $('#state').change(function(e){
         $('#city').prop('disabled', !$(this).val());
@@ -283,6 +287,7 @@
         });
     </script>
 
+<!-- Script que esconde as opções que nõo são compartíveis com a seleção do campo anterior-->
     <script>
         $('#state').change(function () {
             var parent = $(this).val();
