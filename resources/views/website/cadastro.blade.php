@@ -133,92 +133,64 @@
         <select name="city" class="form-select" id="city" required>
             <option selected disabled value="">Selecione...</option>
             <option data-parent="Acre" value="Rio Branco">Rio Branco</option>
-
             <option data-parent="Alagoas" value="Maceió">Maceió</option>
-
             <option data-parent="Amapá" value="Macapá">Macapá</option>
-
             <option data-parent="Amazonas" value="Manaus">Manaus</option>
             <option data-parent="Amazonas" value="Parintins">Parintins</option>
-            
             <option data-parent="Bahia" value="Feira de Santana">Feira de Santana</option>
             <option data-parent="Bahia" value="Salvador">Salvador</option>
-
             <option data-parent="Ceará" value="Fortaleza">Fortaleza</option>
             <option data-parent="Ceará" value="Juazeiro do Norte">Juazeiro do Norte</option>
-
             <option data-parent="Distrito Federal" value="Brasília">Brasília</option>
-
             <option data-parent="Espírito Santo" value="Vila Velha">Vila Velha</option>
             <option data-parent="Espírito Santo" value="Vitória">Vitória</option>
             <option data-parent="Espírito Santo" value="Serra">Serra</option>
-
             <option data-parent="Goiás" value="Goiânia">Goiânia</option>
-
             <option data-parent="Maranhão" value="Imperatriz">Imperatriz</option>
             <option data-parent="Maranhão" value="São Luís">São Luís</option>
-
             <option data-parent="Mato Grosso" value="CuiabÁ">Cuiabá</option>
             <option data-parent="Mato Grosso" value="Várzea Grande">Várzea Grande</option>
-
             <option data-parent="Mato Grosso do Sul" value="Dourados">Dourados</option>
             <option data-parent="Mato Grosso do Sul" value="Campo Grande">Campo Grande</option>
-
             <option data-parent="Minas Gerais" value="Belo Horizonte">Belo Horizonte</option>
             <option data-parent="Minas Gerais" value="Juiz de Fora">Juiz de Fora</option>
             <option data-parent="Minas Gerais" value="Uberlândia">Uberlândia</option>
-
             <option data-parent="Pará" value="Belém">Belém</option>
             <option data-parent="Pará" value="Santarém">Santarém</option>
-
             <option data-parent="Paraíba" value="Campina Grande">Campina Grande</option>
             <option data-parent="Paraíba" value="João Pessoa">João Pessoa</option>
-
             <option data-parent="Paraná" value="Curitiba">Curitiba</option>
             <option data-parent="Paraná" value="Londrina">Londrina</option>
             <option data-parent="Paraná" value="Maringá">Maringá</option>
-
             <option data-parent="Pernambuco" value="Olinda">Olinda</option>
             <option data-parent="Pernambuco" value="Petrolina">Petrolina</option>
             <option data-parent="Pernambuco" value="Recife">Recife</option>
-            
-
             <option data-parent="Piauí" value="Teresina">Teresina</option>
-
             <option data-parent="Rio de Janeiro" value="Duque de Caxias">Duque de Caxias</option>
             <option data-parent="Rio de Janeiro" value="Niterói">Niterói</option>
             <option data-parent="Rio de Janeiro" value="Nova Iguaçu">Nova Iguaçu</option>
             <option data-parent="Rio de Janeiro" value="Rio de Janeiro">Rio de Janeiro</option>
             <option data-parent="Rio de Janeiro" value="São Gonçalo">São Gonçalo</option>
-    
             <option data-parent="Rio Grande do Norte" value="Mossoró">Mossoró</option>
             <option data-parent="Rio Grande do Norte" value="Natal">Natal</option>
-            
             <option data-parent="Rio Grande do Sul" value="Canoas">Canoas</option>
             <option data-parent="Rio Grande do Sul" value="Caxias do Sul">Caxias do Sul</option>
             <option data-parent="Rio Grande do Sul" value="Pelotas">Pelotas</option>
             <option data-parent="Rio Grande do Sul" value="Porto Alegre">Porto Alegre</option>
             <option data-parent="Rio Grande do Sul" value="Santa Maria">Santa Maria</option>
-            
-
             <option data-parent="Rondônia" value="Porto Velho">Porto Velho</option>
-
             <option data-parent="Roraima" value="Boa Vista">Boa Vista</option>
-
             <option data-parent="Santa Catarina" value="Balneário Camboriú">Balneário Camboriú</option>
             <option data-parent="Santa Catarina" value="Blumenau">Blumenau</option>
             <option data-parent="Santa Catarina" value="Chapecó">Chapecó</option>
             <option data-parent="Santa Catarina" value="Florianópolis">Florianópolis</option>
             <option data-parent="Santa Catarina" value="Joinville">Joinville</option>
-
             <option data-parent="São Paulo" value="Campinas">Campinas</option>
             <option data-parent="São Paulo" value="Guarulhos">Guarulhos</option>
             <option data-parent="São Paulo" value="Santo André">Santo André</option>
             <option data-parent="São Paulo" value="São Bernado do Campo">São Bernardo do Campo</option>
             <option data-parent="São Paulo" value="São Paulo">São Paulo</option>
-
             <option data-parent="Sergipe" value="Aracaju">Aracaju</option>
-
             <option data-parent="Tocantins" value="Palmas">Palmas</option>
         </select>
         <div class="invalid-feedback">

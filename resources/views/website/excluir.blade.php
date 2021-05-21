@@ -15,6 +15,13 @@
         </br>
         <h3>Listagem de alunos</h3>
 
+        <style>
+            .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+                background-color: #ffc7ce;
+                color: #ad0007;
+            }
+        </style>
+
         <table class="table table-hover">
             <thead class="table-dark">
                 <tr style="text-align:center">
@@ -42,7 +49,7 @@
                     <td> {{ $a->estado }}</td>
                     <td> {{ $a->cidade }}</td>
                     <td>
-                        <a href="{{ action('App\Http\Controllers\AlunoController@remove', $a->id) }}">
+                        <a href="{{ action('App\Http\Controllers\AlunoController@remove', $a->id) }}" onclick="ConfirmDelete()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#DC3545"
                                 class="bi bi-trash-fill" viewBox="0 0 16 16">
                                 <path
@@ -56,11 +63,36 @@
     
     <div class="row">
         <div class="col">
-            <a href="{{route('site.home')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
+            <a href="{{route('site.listagem')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
         <div class="col text-right">
-            <a href="{{ action('App\Http\Controllers\AlunoController@removeall')}}" class="btn btn-danger" role="button" data-bs-toggle="button" aria-pressed="true">Excluir todos</a>
+            <a href="{{ action('App\Http\Controllers\AlunoController@removeall')}}" class="btn btn-danger" role="button" data-bs-toggle="button" 
+                aria-pressed="true" onclick="ConfirmDeleteAll()">Excluir todos</a>
         </div>
     </div>
     @endif
+
+    <script>
+        function ConfirmDelete()
+        {
+        var x = confirm("Tem certeza que deseja excluir esse registro?");
+        if (x)
+            return true;
+            
+        else
+            return false;
+        }
+    </script>
+
+    <script>
+        function ConfirmDeleteAll(){
+
+        var x = confirm("Tem certeza que deseja excluir todos os registros?");
+        if (x)
+            return true;
+        else
+            return false;
+        }
+    </script>
+
 @endsection

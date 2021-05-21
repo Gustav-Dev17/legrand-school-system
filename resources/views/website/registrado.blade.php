@@ -12,4 +12,13 @@
             <a href="{{route('site.home')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
     </div>
+    <script>
+        Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Cadastrado concluído!',
+        showConfirmButton: false,
+        timer: 1500
+        })
+    </script>
 @endsection
