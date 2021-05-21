@@ -77,7 +77,7 @@
 
     <div class="col-md-3">
         <label for="validationCustom07" class="form-label">Turma</label>
-        <select name="school_class" class="form-select" id="validationCustom07" required>
+        <select name="school_class" class="form-select" id="school_class" required>
         <option selected disabled value="">Selecione...</option>
         <option>A</option>
         <option>B</option>
@@ -231,26 +231,6 @@
     </script>
 
     <script>
-        $('#state').change(function(e){
-        $('#city').prop('disabled', !$(this).val());
-        });
-        $(function(){
-            $('#city').prop('disabled', true);
-        });
-    </script>
-
-    <script>
-        $('#state').change(function () {
-            var parent = $(this).val();
-            $('#city').children().each(function () {
-                if ($(this).data('parent') != parent) {
-                    $(this).hide();
-                } else $(this).show();
-            });
-        });
-    </script>
-
-    <script>
         $('#school_level').change(function(e){
         $('#grade').prop('disabled', !$(this).val());
         });
@@ -263,6 +243,35 @@
         $('#school_level').change(function () {
             var parent = $(this).val();
             $('#grade').children().each(function () {
+                if ($(this).data('parent') != parent) {
+                    $(this).hide();
+                } else $(this).show();
+            });
+        });
+    </script>
+
+    <script>
+        $('#grade').change(function(e){
+        $('#school_class').prop('disabled', !$(this).val());
+        });
+        $(function(){
+            $('#school_class').prop('disabled', true);
+        });
+    </script>
+
+    <script>
+        $('#state').change(function(e){
+        $('#city').prop('disabled', !$(this).val());
+        });
+        $(function(){
+            $('#city').prop('disabled', true);
+        });
+    </script>
+
+    <script>
+        $('#state').change(function () {
+            var parent = $(this).val();
+            $('#city').children().each(function () {
                 if ($(this).data('parent') != parent) {
                     $(this).hide();
                 } else $(this).show();
