@@ -12,7 +12,7 @@
     </div>
 @endif
 
-    <form action="{{route('site.adiciona')}}" class="row g-3 needs-validation" method="post" >
+    <form action="{{route('site.adiciona')}}" class="row g-3 needs-validation" method="post">
 
     <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
 
@@ -23,13 +23,7 @@
         Looks good!
         </div>
     </div>
-    <!-- <div class="col-md-5">
-        <label for="validationCustom02" class="form-label">Sobrenome</label>
-        <input name="surname" type="text" class="form-control" id="validationCustom02" placeholder="Exemplo: Silva" required>
-        <div class="valid-feedback">
-        Looks good!
-        </div>
-    </div> -->
+
     <div class="col-md-3">
         <label for=validationCustom03" class="form-label">Idade</label>
         <input name="age" type="number" class="form-control" id="validationCustom03" min="6" max="99"
@@ -48,11 +42,11 @@
     </div>
     <div class="col-md-3">
         <label for="validationCustom05" class="form-label">Nível de ensino</label>
-        <select name="school_level" class="form-select" id="validationCustom05" required>
+        <select name="school_level" class="form-select" id="school_level" required>
         <option selected disabled value="">Selecione...</option>
-        <option>Ensino Fundamental I</option>
-        <option>Ensino Fundamental II</option>
-        <option>Ensino Médio</option>
+        <option value="Ensino Fundamental I">Ensino Fundamental I</option>
+        <option value="Ensino Fundamental II">Ensino Fundamental II</option>
+        <option value="Ensino Médio">Ensino Médio</option>
         </select>
         <div class="invalid-feedback">
         Please select a valid state.
@@ -61,17 +55,20 @@
 
     <div class="col-md-3">
         <label for="validationCustom06" class="form-label">Série (ano)</label>
-        <select name="grade" class="form-select" id="validationCustom06" required>
+        <select name="grade" class="form-select" id="grade" required>
         <option selected disabled value="">Selecione...</option>
-        <option>1º ano</option>
-        <option>2º ano</option>
-        <option>3º ano</option>
-        <option>4º ano</option>
-        <option>5º ano</option>
-        <option>6º ano</option>
-        <option>7º ano</option>
-        <option>8º ano</option>
-        <option>9º ano</option>
+        <option data-parent="Ensino Fundamental I" value="1º ano">1º ano</option>
+        <option data-parent="Ensino Fundamental I" value="2º ano">2º ano</option>
+        <option data-parent="Ensino Fundamental I" value="3º ano">3º ano</option>
+        <option data-parent="Ensino Fundamental I" value="4º ano">4º ano</option>
+        <option data-parent="Ensino Fundamental I" value="5º ano">5º ano</option>
+        <option data-parent="Ensino Fundamental II" value="6º ano">6º ano</option>
+        <option data-parent="Ensino Fundamental II" value="7º ano">7º ano</option>
+        <option data-parent="Ensino Fundamental II" value="8º ano">8º ano</option>
+        <option data-parent="Ensino Fundamental II" value="9º ano">9º ano</option>
+        <option data-parent="Ensino Médio" value="1º ano">1º ano</option>
+        <option data-parent="Ensino Médio" value="2º ano">2º ano</option>
+        <option data-parent="Ensino Médio" value="3º ano">3º ano</option>
         </select>
         <div class="invalid-feedback">
         Please select a valid state.
@@ -96,36 +93,120 @@
     </div>
 
     <div class="col-md-3">
-        <label for="validationCustom08" class="form-label">Estado</label>
-        <select name="state" class="form-select" id="validationCustom08" required>
-        <option selected disabled value="">Selecione...</option>
-        <option>Acre</option>
-        <option>Alagoas</option>
-        <option>Amapá</option>
-        <option>Amazonas</option>
-        <option>Bahia</option>
-        <option>Ceará</option>
-        <option>Distrito Federal</option>
-        <option>Espírito Santo</option>
-        <option>Goiás</option>
-        <option>Maranhão</option>
-        <option>Mato Grosso</option>
-        <option>Mato Grosso do Sul</option>
-        <option>Minas Gerais</option>
-        <option>Pará</option>
-        <option>Paraíba</option>
-        <option>Paraná</option>
-        <option>Pernambuco</option>
-        <option>Piauí</option>
-        <option>Rio de Janeiro</option>
-        <option>Rio Grande do Norte</option>
-        <option>Rio Grande do Sul</option>
-        <option>Rondônia</option>
-        <option>Roraima</option>
-        <option>Santa Catarina</option>
-        <option>São Paulo</option>
-        <option>Sergipe</option>
-        <option>Tocantins</option>
+        <label for="state" class="form-label">Estado</label>
+        <select name="state" class="form-select" id="state" required>
+            <option selected disabled value="">Selecione...</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceará">Ceará</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Pará">Pará</option>
+            <option value="Paraíba">Paraíba</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="Rondônia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+        </select>
+        <div class="invalid-feedback">
+        Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="city" class="form-label">Cidade</label>
+        <select name="city" class="form-select" id="city" required>
+            <option selected disabled value="">Selecione...</option>
+            <option data-parent="Acre" value="Rio Branco">Rio Branco</option>
+
+            <option data-parent="Alagoas" value="Maceió">Maceió</option>
+
+            <option data-parent="Amapá" value="Macapá">Macapá</option>
+
+            <option data-parent="Amazonas" value="Manaus">Manaus</option>
+            <option data-parent="Amazonas" value="Parintins">Parintins</option>
+
+            <option data-parent="Bahia" value="Salvador">Salvador</option>
+            <option data-parent="Bahia" value="Feira de Santana">Feira de Santana</option>
+
+            <option data-parent="Ceará" value="Fortaleza">Fortaleza</option>
+            <option data-parent="Ceará" value="Juazeiro do Norte">Juazeiro do Norte</option>
+
+            <option data-parent="Distrito Federal" value="Brasília">Brasília</option>
+
+            <option data-parent="Espírito Santo" value="Vitória">Vitória</option>
+            <option data-parent="Espírito Santo" value="Vila Velha">Vila Velha</option>
+
+            <option data-parent="Goiás" value="Goiânia">Goiânia</option>
+
+            <option data-parent="Maranhão" value="São Luís">São Luís</option>
+            <option data-parent="Maranhão" value="Imperatriz">Imperatriz</option>
+
+            <option data-parent="Mato Grosso" value="CuiabÁ">Cuiabá</option>
+            <option data-parent="Mato Grosso" value="Cinop">Sinop</option>
+
+            <option data-parent="Mato Grosso do Sul" value="Campo Grande">Campo Grande</option>
+            <option data-parent="Mato Grosso do Sul" value="Dourados">Dourados</option>
+
+            <option data-parent="Minas Gerais" value="Belo Horizonte">Belo Horizonte</option>
+
+            <option data-parent="Pará" value="Belém">Belém</option>
+            <option data-parent="Pará" value="Santarém">Santarém</option>
+
+            <option data-parent="Paraíba" value="João Pessoa">João Pessoa</option>
+            <option data-parent="Paraíba" value="Campina Grande">Campina Grande</option>
+
+            <option data-parent="Paraná" value="Curitiba">Curitiba</option>
+            <option data-parent="Paraná" value="Londrina">Londrina</option>
+
+            <option data-parent="Pernambuco" value="Recife">Recife</option>
+            <option data-parent="Pernambuco" value="Petrolina">Petrolina</option>
+
+            <option data-parent="Piauí" value="Teresina">Teresina</option>
+
+            <option data-parent="Rio de Janeiro" value="Rio de Janeiro">Rio de Janeiro</option>
+            <option data-parent="Rio de Janeiro" value="Niterói">Niterói</option>
+            <option data-parent="Rio de Janeiro" value="Petrópolis">Petrópolis</option>
+    
+            <option data-parent="Rio Grande do Norte" value="Natal">Natal</option>
+            <option data-parent="Rio Grande do Norte" value="Mossoró">Mossoró</option>
+
+            <option data-parent="Rio Grande do Sul" value="Porto Alegre">Porto Alegre</option>
+            <option data-parent="Rio Grande do Sul" value="Pelotas">Pelotas</option>
+
+            <option data-parent="Rondônia" value="Porto Velho">Porto Velho</option>
+
+            <option data-parent="Roraima" value="Boa Vista">Boa Vista</option>
+
+            <option data-parent="Santa Catarina" value="Blumenau">Blumenau</option>
+            <option data-parent="Santa Catarina" value="Florianópolis">Florianópolis</option>
+            <option data-parent="Santa Catarina" value="Joinville">Joinville</option>
+            <option data-parent="Santa Catarina" value="Balneário Camboriú">Balneário Camboriú</option>
+            <option data-parent="Santa Catarina" value="Caçador">Caçador</option>
+
+            <option data-parent="São Paulo" value="São Paulo">São Paulo</option>
+            <option data-parent="São Paulo" value="Campinas">Campinas</option>
+            <option data-parent="São Paulo" value="São Caetano do Sul">São Caetano do Sul</option>
+            <option data-parent="São Paulo" value="São Bernado do Campo">São Bernardo do Campo</option>
+
+            <option data-parent="Sergipe" value="Aracaju">Aracaju</option>
+
+            <option data-parent="Tocantins" value="Palmas">Palmas</option>
         </select>
         <div class="invalid-feedback">
         Please select a valid state.
@@ -146,6 +227,46 @@
         $(document).ready(function () {
                 $('#validationCustom04').mask('9999999');
                 $('#validationCustom03').mask('99');
+        });
+    </script>
+
+    <script>
+        $('#state').change(function(e){
+        $('#city').prop('disabled', !$(this).val());
+        });
+        $(function(){
+            $('#city').prop('disabled', true);
+        });
+    </script>
+
+    <script>
+        $('#state').change(function () {
+            var parent = $(this).val();
+            $('#city').children().each(function () {
+                if ($(this).data('parent') != parent) {
+                    $(this).hide();
+                } else $(this).show();
+            });
+        });
+    </script>
+
+    <script>
+        $('#school_level').change(function(e){
+        $('#grade').prop('disabled', !$(this).val());
+        });
+        $(function(){
+            $('#grade').prop('disabled', true);
+        });
+    </script>
+
+    <script>
+        $('#school_level').change(function () {
+            var parent = $(this).val();
+            $('#grade').children().each(function () {
+                if ($(this).data('parent') != parent) {
+                    $(this).hide();
+                } else $(this).show();
+            });
         });
     </script>
 @endsection

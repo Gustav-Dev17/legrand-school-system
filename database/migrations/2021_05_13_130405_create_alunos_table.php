@@ -22,6 +22,7 @@ class CreateAlunosTable extends Migration
             $table->string('serie');
             $table->string('turma');
             $table->string('estado');
+            $table->string('cidade');
             $table->timestamps();
         });
     }

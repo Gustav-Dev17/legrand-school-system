@@ -25,7 +25,8 @@
                     <th scope="col">Nível</th>
                     <th scope="col">Série</th>
                     <th scope="col">Turma</th>
-                    <th scope="col">Estado da Unidade</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Cidade</th>
                 </tr>
             </thead>
             @foreach ($alunos as $a)
@@ -38,6 +39,7 @@
                     <td> {{ $a->serie }} </td>
                     <td> {{ $a->turma }}</td>
                     <td> {{ $a->estado }}</td>
+                    <td> {{ $a->cidade }}</td>
                 </tr>
             @endforeach
         </table>

@@ -8,6 +8,7 @@
         </div>
         <div class="col-12">
             <a href="{{route('site.cadastro')}}" class="btn btn-primary" role="button" data-bs-toggle="button">Cadastrar outro aluno</a>
+            <a href="{{route('site.listagem')}}" class="btn btn-success" role="button" data-bs-toggle="button">Listagem</button></a>
             <a href="{{route('site.home')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
     </div>

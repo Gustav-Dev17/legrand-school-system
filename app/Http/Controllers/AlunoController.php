@@ -36,11 +36,12 @@ class AlunoController extends Controller
         $serie = Request::input('grade');
         $turma = Request::input('school_class');
         $estado = Request::input('state');
+        $cidade = Request::input('city');
 
         DB::insert('insert into alunos
         (nome, idade, matricula, 
-        nivel_de_ensino, serie ,turma, estado) values(?,?,?,?,?,?,?)',
-        array($nome, $idade, $matricula ,$nivel_de_ensino, $serie, $turma, $estado));
+        nivel_de_ensino, serie ,turma, estado, cidade) values(?,?,?,?,?,?,?,?)',
+        array($nome, $idade, $matricula ,$nivel_de_ensino, $serie, $turma, $estado, $cidade));
 
         return view('website.registrado');
     }

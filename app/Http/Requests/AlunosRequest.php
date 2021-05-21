@@ -31,6 +31,7 @@ class AlunosRequest extends FormRequest
             'grade' => 'required',
             'school_class' => 'required',
             'state' => 'required',
+            'city' => 'required',
             'form_check' => 'required',
         ];
     }
