@@ -12,6 +12,9 @@
             <a href="{{route('site.home')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
     </div>
+
+<!-- este script deve ser adicionado ao pressionar o botão submit no form na view de cadastro -->
+
     <script>
         Swal.fire({
         position: 'center',
@@ -21,4 +24,5 @@
         timer: 1500
         })
     </script>
+    
 @endsection

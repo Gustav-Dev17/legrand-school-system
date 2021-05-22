@@ -148,7 +148,7 @@
             <option data-parent="Goiás" value="Goiânia">Goiânia</option>
             <option data-parent="Maranhão" value="Imperatriz">Imperatriz</option>
             <option data-parent="Maranhão" value="São Luís">São Luís</option>
-            <option data-parent="Mato Grosso" value="CuiabÁ">Cuiabá</option>
+            <option data-parent="Mato Grosso" value="Cuiabá">Cuiabá</option>
             <option data-parent="Mato Grosso" value="Várzea Grande">Várzea Grande</option>
             <option data-parent="Mato Grosso do Sul" value="Dourados">Dourados</option>
             <option data-parent="Mato Grosso do Sul" value="Campo Grande">Campo Grande</option>
