@@ -21,7 +21,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-### To open and run this project, run the following commands:
+### To open and run this project, follow the steps below:
 
 <em>Note: your computer must have PHP and Composer installed! If you already have them installed follow the next steps!</em>
 
