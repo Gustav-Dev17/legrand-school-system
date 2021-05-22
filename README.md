@@ -25,7 +25,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 <em>Note: your computer must have PHP and Composer installed! If you already have them installed follow the next steps!</em>
 
-1. With your source code editor (I use VS Code), rename file <em>.env.example</em> to <em>.env</em><br>
+1. Rename file <em>.env.example</em> to <em>.env</em><br>
 
 2. Set the database information on lines 12, 13 and 14
 
