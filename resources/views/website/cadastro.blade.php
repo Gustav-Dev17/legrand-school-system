@@ -203,10 +203,11 @@
         </div>
     </div>
     <div class="col-12">
-        <button class="btn btn-primary" type="submit" btn-block>Cadastrar</button>
+        <button class="btn btn-primary" type="submit" id="btn-submit" btn-block> Cadastrar</button>
         <a href="{{route('site.home')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
     </div>
     </form>
+
 
 <!-- Script-máscara para idade e matrícula-->
     <script>

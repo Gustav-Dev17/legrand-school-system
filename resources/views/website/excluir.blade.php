@@ -66,7 +66,7 @@
             <a href="{{route('site.listagem')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
         <div class="col text-right">
-            <a href="{{ action('App\Http\Controllers\AlunoController@removeall')}}" class="btn btn-danger" role="button" data-bs-toggle="button" 
+            <a href="{{ action('App\Http\Controllers\AlunoController@removeall')}}" id="btn-removeall" class="btn btn-danger" role="button" data-bs-toggle="button" 
                 aria-pressed="true" onclick="ConfirmDeleteAll()">Excluir todos</a>
         </div>
     </div>

@@ -13,7 +13,6 @@
         </div>
     </div>
 
-<!-- este script deve ser adicionado ao pressionar o botão submit no form na view de cadastro -->
 
     <script>
         Swal.fire({
