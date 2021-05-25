@@ -26,13 +26,19 @@ class AlunosRequest extends FormRequest
         return [
             'name' => 'required|max:100',
             'age' => 'required|numeric',
-            'enrollment' => 'required|numeric',
+            'enrollment' => 'required|unique:alunos,matricula',
             'school_level' => 'required',
             'grade' => 'required',
             'school_class' => 'required',
             'state' => 'required',
             'city' => 'required',
             'form_check' => 'required',
+        ];
+    }
+
+    public function messages(){
+        return[
+            'enrollment.unique'=>"Matrícula já existente! Por favor, atribua outro número de matrícula"
         ];
     }
 }

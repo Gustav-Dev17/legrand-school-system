@@ -7,8 +7,10 @@
 
 @if ($errors->any())
     </br>
-    <div class="alert alert-danger">
-        Um ou mais campos não foram preenchidos, ou foram preenchidos incorretamente!
+    <div class="alert alert-danger withtimeout">
+        @foreach ($errors->all() as $error)
+            {{ $error }}
+        @endforeach
     </div>
 @endif
 
@@ -26,7 +28,7 @@
 
     <div class="col-md-3">
         <label for="age" class="form-label">Idade</label>
-        <input name="age" type="number" class="form-control" id="age" min="6" max="99"
+        <input name="age" type="text" class="form-control" id="age" min="6" max="99"
         placeholder="Entre 6 e 99" value="{{old('age')}}" required>
         <div class="valid-feedback">
             Looks good!
@@ -214,7 +216,6 @@
         $(document).ready(function () {
             $('#age').mask('99');
             $('#enrollment').mask('9999999');
-                
         });
     </script>
     
