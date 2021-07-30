@@ -14,7 +14,7 @@
     </div>
 
 
-    <script>
+    <!-- <script>
         Swal.fire({
         position: 'center',
         icon: 'success',
@@ -22,6 +22,6 @@
         showConfirmButton: false,
         timer: 1500
         })
-    </script>
+    </script> -->
     
 @endsection

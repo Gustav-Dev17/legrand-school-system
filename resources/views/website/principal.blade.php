@@ -234,34 +234,33 @@
                 </div>
 
                 <div class="col-6 col-md">
-                    <h5>Features</h5>
+                    <h5>Institucional</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for
-                                developers</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Recursos humanos</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Código de ética</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cultura organizacional</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Regulamentos</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Coordenação</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Trabalhe conosco</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Resources</h5>
+                    <h5>Recursos</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Educação</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Homeschooling</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Ensino à distância</a>
                         </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Transferências</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>About</h5>
+                    <h5>Sobre</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{route('site.locations')}}">Locations</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipe</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{route('site.locations')}}">Localização</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacidade</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Termos</a></li>
                     </ul>
                 </div>
             </div>
