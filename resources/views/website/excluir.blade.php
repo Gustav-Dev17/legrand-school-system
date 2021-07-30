@@ -49,7 +49,7 @@
                     <td> {{ $a->estado }}</td>
                     <td> {{ $a->cidade }}</td>
                     <td>
-                        <a href="{{ action('App\Http\Controllers\AlunoController@remove', $a->id) }}" onclick="ConfirmDelete()">
+                        <a onclick="ConfirmDelete()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#DC3545"
                                 class="bi bi-trash-fill" viewBox="0 0 16 16">
                                 <path
@@ -66,33 +66,61 @@
             <a href="{{route('site.listagem')}}" class="btn btn-secondary" role="button" data-bs-toggle="button" aria-pressed="true">Voltar</a>
         </div>
         <div class="col text-right">
-            <a href="{{ action('App\Http\Controllers\AlunoController@removeall')}}" id="btn-removeall" class="btn btn-danger" role="button" data-bs-toggle="button" 
+            <a id="btn-removeall" class="btn btn-danger" role="button" data-bs-toggle="button" 
                 aria-pressed="true" onclick="ConfirmDeleteAll()">Excluir todos</a>
         </div>
     </div>
-    @endif
+    
 
     <script>
         function ConfirmDelete()
         {
-        var x = confirm("Tem certeza que deseja excluir esse registro?");
-        if (x)
-            return true;
-            
-        else
-            return false;
+            Swal.fire({
+            title: 'Tem certeza que deseja excluir?',
+            text: "Esta ação não pode ser revertida!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, excluir!',
+            cancelButtonText: 'Cancelar',
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Cadastro excluído!',
+                'O registro foi excluído do sistema.',
+                'success'
+                )
+                location.href="{{ action('App\Http\Controllers\AlunoController@remove', $a->id) }}"
+            }
+            })
         }
     </script>
 
     <script>
-        function ConfirmDeleteAll(){
-
-        var x = confirm("Tem certeza que deseja excluir todos os registros?");
-        if (x)
-            return true;
-        else
-            return false;
+        function ConfirmDeleteAll()
+        {
+            Swal.fire({
+            title: 'Tem certeza que deseja excluir todos os cadastros?',
+            text: "Esta ação não pode ser revertida!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, excluir!',
+            cancelButtonText: 'Cancelar',
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Cadastros excluídos!',
+                'Todos os registros foram excluídos do sistema.',
+                'success'
+                )
+                location.href="{{ action('App\Http\Controllers\AlunoController@removeall')}}"
+            }
+            })
         }
     </script>
+@endif
 
 @endsection
